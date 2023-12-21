@@ -1,0 +1,92 @@
+.main{
+    height: 600px;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.imgsec{
+    position: relative;
+    text-align: right;
+}
+.textsec{
+    color: aliceblue;
+    flex: 1;
+}
+.img{
+    width: 726px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.text{
+    margin-left: 100px;
+    width: 700px;
+    margin-top: 100px;
+    font-size: 60px;
+    color: hsl(0, 0%, 100%);
+    font-family: Inter;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.violet{
+    color: hsl(277, 64%, 61%);
+}
+.subtext{
+    width: 500px;
+    font-size: 20px;
+    font-family: Lexend Deca;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.stats{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+}
+.substats{
+    flex: 1;
+    margin-left: 100px;
+    margin-top: 70px;
+    font-size: 25px;
+    font-family: Lexend Deca;
+    font-weight: bold;
+}
+.below{
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 725px; /* Ensure the overlay spans the container */
+    height: 100%; /* Ensure the overlay spans the container */
+    background-color: hsl(277, 86%, 55%); /* Adjust color and opacity */
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    opacity: 0.5;
+}
+@media (max-width: 768px) {
+    .main {
+      height: auto;
+      flex-direction: column;
+      /* Adjust other styles for smaller screens */
+    }
+    
+    .img {
+      width: 100%; /* Ensure the image takes the full width */
+      border-radius: 10px; /* Adjust border radius for smaller screens */
+    }
+    .overlay{
+        width: 100%;
+        border-radius: 10px; 
+    }
+    .textsec{
+        width: 100%;
+        border-radius: 10px;
+    }
+  }
+  
